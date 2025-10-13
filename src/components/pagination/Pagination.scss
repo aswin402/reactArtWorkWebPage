@@ -1,0 +1,111 @@
+//used chatgpt+css scan --website for style
+
+// =============================
+// 🎨 VARIABLES 
+// =============================
+$primary-color: #131a25;
+$secondary-color: #ffffff;
+$text-color: #3c4043;
+$hover-bg-color: #000000;
+$hover-text-color: #ffffff;
+$focus-border-color: #4285f4;
+
+$font-family: "Google Sans", Roboto, Arial, sans-serif;
+$font-size: 14px;
+$font-weight: 500;
+$border-radius: 24px;
+
+$shadow-default: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+$shadow-hover: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+$shadow-active: rgba(255, 1, 1, 0.3) 0 4px 4px 0, rgba(0, 132, 255, 0.15) 0 8px 12px 6px;
+
+// =============================
+// ⚙️ MIXINS
+// =============================
+
+// Button base styling
+@mixin button-base($bg-color, $color) {
+  align-items: center;
+  appearance: none;
+  background-color: $bg-color;
+  border: none;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  color: $color;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: normal;
+  letter-spacing: .25px;
+  padding: 2px 24px;
+  height: 48px;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),
+              opacity 15ms linear 30ms,
+              transform 270ms cubic-bezier(0, 0, .2, 1);
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform, opacity;
+}
+
+// Shadow mixin
+@mixin shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+// Hover mixin
+@mixin hover-style($bg, $text) {
+  &:hover {
+    background-color: $bg;
+    color: $text;
+  }
+}
+
+// =============================
+// 🧭 PAGINATION STYLES
+// =============================
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 8px;
+
+  // Button Styling
+  .button-17 {
+    @include button-base($secondary-color, $text-color);
+    @include shadow($shadow-default);
+
+    &:not(:disabled) {
+      @include hover-style($hover-bg-color, $hover-text-color);
+
+      &:hover {
+        @include shadow($shadow-hover);
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $focus-border-color;
+        @include shadow($shadow-default);
+      }
+
+      &:active {
+        @include shadow($shadow-active);
+      }
+    }
+
+    &:disabled {
+      @include shadow($shadow-default);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  // Current page button
+  .current-page {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}
