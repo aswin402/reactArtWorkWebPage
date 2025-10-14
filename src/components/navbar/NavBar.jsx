@@ -17,7 +17,7 @@ function NavBar() {
     setActiveIndex(index);
   };
 
-  const navItems = ['Home', 'Videos', 'Playlists', 'Community'];
+  const navItems = ['Home', 'Explore', 'About Us', 'Join Us'];
 
   return (
     <nav className="navbar">

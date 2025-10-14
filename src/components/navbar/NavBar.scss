@@ -1,6 +1,7 @@
-$navbar-bg: #ffffff;
-$navbar-text: #000;
-$underline-color: #000;
+$navbar-bg:  #24262b;
+$logo-color:#ffffff;
+$navbar-text: #ffffff;
+$underline-color: #be0653;
 $transition-duration: 0.4s;
 
 .navbar {
@@ -16,7 +17,7 @@ $transition-duration: 0.4s;
   z-index: 1000;
   .navbar-logo {
     margin-right: 46rem;
-
+    color: $logo-color;
   }
   .navbar-links {
     position: relative;
