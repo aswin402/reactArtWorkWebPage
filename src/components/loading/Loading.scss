@@ -1,0 +1,43 @@
+// 🌈 Variables
+$spinner-size: 100px; // reduced size
+$animation-duration: 1.2s;
+$stroke-color: #dd2476;
+$shadow-color: #fc6767;
+
+// 🎬 Mixin for centering
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 🌟 Loading Styles
+.loading-container {
+  @include center-absolute;
+  width: $spinner-size;
+  height: $spinner-size;
+}
+
+#spinner {
+  transform-origin: center;
+  stroke: $stroke-color;
+  animation: spinner-animation $animation-duration cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  filter: drop-shadow(0 0 2px $shadow-color);
+}
+
+// ✨ Keyframes
+@keyframes spinner-animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}

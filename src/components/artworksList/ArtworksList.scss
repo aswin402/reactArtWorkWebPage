@@ -47,7 +47,7 @@ $shadow-hover: 0 0 20px rgba(255, 255, 255, 0.5);
     margin-left: 6rem;
     padding-top: 20px;
     width: 100%;
-    height: 60px;
+    height: 40px;
     margin-bottom: 40px;
     font-size: $font-large;
     font-weight: bold;
@@ -75,7 +75,7 @@ $shadow-hover: 0 0 20px rgba(255, 255, 255, 0.5);
       border-radius: $border-radius;
       padding: 10px;
       width: 20rem;
-      height: 30rem;
+      height: 25rem;
       text-align: center;
       color: $text-color;
       position: relative;
@@ -83,7 +83,7 @@ $shadow-hover: 0 0 20px rgba(255, 255, 255, 0.5);
 
       img {
         width: 100%;
-        height: 20rem;
+        height: 15rem;
         border-radius: $border-radius;
         position: relative;
         z-index: 2;

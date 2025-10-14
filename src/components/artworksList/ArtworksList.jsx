@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Pagination from '../pagination/Pagination.jsx';
 import './ArtworksList.scss';
+import Loading from '../loading/Loading.jsx';
 
 function ArtworksList() {
   const [artworks, setArtworks] = useState([]);
@@ -29,9 +30,9 @@ function ArtworksList() {
   }, [currentPage]);
 
 
+//loading====================================================
 
-
-  if (loading) return <div>Loading…</div>;
+  if (loading) return <Loading />;
   if (error) return <div>Error: {error}</div>;
 
   return (

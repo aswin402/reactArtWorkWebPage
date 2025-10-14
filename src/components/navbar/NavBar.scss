@@ -1,12 +1,63 @@
-$navbar-bg: #9aa0b625;
-.navbar{
-    width: 100%;
-    height: 6rem;
-    background-color: $navbar-bg;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-    position: sticky top -3px;
+$navbar-bg: #ffffff;
+$navbar-text: #000;
+$underline-color: #000;
+$transition-duration: 0.4s;
 
+.navbar {
+  width: 100%;
+  height: 6rem;
+  background-color: $navbar-bg;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .navbar-logo {
+    margin-right: 46rem;
+
+  }
+  .navbar-links {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 25%;
+      text-align: center;
+      cursor: pointer;
+      
+
+      a {
+        display: block;
+        padding: 1rem 0;
+        color: $navbar-text;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color $transition-duration ease;
+
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .underline {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 25%; // since we have 4 links
+      height: 4px;
+      background-color: $underline-color;
+      transition: transform $transition-duration ease-in-out;
+    }
+  }
 }
