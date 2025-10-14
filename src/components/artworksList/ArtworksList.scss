@@ -152,3 +152,15 @@ $shadow-hover: 0 0 20px rgba(255, 255, 255, 0.5);
     background-position: 0% 50%;
   }
 }
+
+// ===================================
+// ⏳ LOADING STATE
+// ===================================
+.artworks-loading-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}

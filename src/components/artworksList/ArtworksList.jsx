@@ -31,8 +31,13 @@ function ArtworksList() {
 
 
 //loading====================================================
-
-  if (loading) return <Loading />;
+  if (loading) {
+    return (
+      <div className="artworks-loading-container">
+        <Loading />
+      </div>
+    );
+  }
   if (error) return <div>Error: {error}</div>;
 
   return (
