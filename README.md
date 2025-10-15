@@ -2,7 +2,7 @@
 
 A React and SCSS single-page experience that showcases curated artwork from the Art Institute of Chicago API 
 
-##Coded by [React](https://react.dev/) and styled with [SCSS](https://sass-lang.com/).
+## Coded by [React](https://react.dev/) and styled with [SCSS](https://sass-lang.com/).
 
 <img width="50" height="50" alt="React Logo" src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"> <img width="50" height="50" alt="SCSS Logo" src="https://img.icons8.com/?size=100&id=QBqFNfPPB2Kx&format=png&color=000000">
 ### Core Technologies
