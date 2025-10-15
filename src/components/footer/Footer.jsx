@@ -29,12 +29,12 @@ const Footer = () => {
           </div>
 
           <div className="footer-col">
-            <h4>online shop</h4>
+            <h4>Collections</h4>
             <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
+              <li><a href="#">Hand painted</a></li>
+              <li><a href="#">Arts</a></li>
+              <li><a href="#">Moder Arts</a></li>
+              <li><a href="#">picture frame</a></li>
             </ul>
           </div>
 

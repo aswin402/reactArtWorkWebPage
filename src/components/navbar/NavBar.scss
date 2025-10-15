@@ -1,6 +1,7 @@
 $navbar-bg:  #24262b;
 $logo-color:#ffffff;
 $navbar-text: #ffffff;
+$hover-color: #d32a79;
 $underline-color: #be0653;
 $transition-duration: 0.4s;
 
@@ -46,6 +47,10 @@ $transition-duration: 0.4s;
 
         &.active {
           font-weight: 600;
+        }
+        &:hover {
+          color: $hover-color;
+          padding-top: 8px;
         }
       }
     }

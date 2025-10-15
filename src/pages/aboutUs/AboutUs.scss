@@ -1,0 +1,106 @@
+//==========================================
+// VARIABLES
+//==========================================
+$color-bg: #1a120b;
+$color-secondary-bg: #3c2a21;
+$color-accent: #d5cea3;
+$color-text: #e5e5cb;
+
+$padding-section: 60px 20px;
+$font-base: 1.1rem;
+$radius: 10px;
+
+//==========================================
+// MIXINS
+//==========================================
+
+// Centered column layout
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+// Reusable heading style
+@mixin heading-style {
+  color: $color-accent;
+  margin-bottom: 15px;
+}
+
+// Reusable paragraph style
+@mixin paragraph-style {
+  line-height: 1.6;
+  font-size: $font-base;
+  color: $color-text;
+}
+
+// Reusable box style (for sections like API details)
+@mixin box-style {
+  background-color: $color-secondary-bg;
+  padding: 20px;
+  border-radius: $radius;
+}
+
+//==========================================
+// ABOUT PAGE STYLING
+//==========================================
+
+.about-page {
+  background-color: $color-bg;
+  color: $color-text;
+  min-height: 80vh;
+  padding: $padding-section;
+  @include flex-column-center;
+
+  section {
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  h1, h2, h3 {
+    @include heading-style;
+  }
+
+  p {
+    @include paragraph-style;
+  }
+
+  a {
+    color: $color-accent;
+    text-decoration: underline;
+    font-weight: 500;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+
+  .api-details {
+    @include box-style;
+    margin-top: 20px;
+    text-align: left;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+
+      li {
+        margin-bottom: 10px;
+        color: $color-text;
+      }
+
+      code {
+        background-color: $color-bg;
+        padding: 3px 6px;
+        border-radius: 5px;
+        color: $color-accent;
+        font-family: 'Courier New', monospace;
+      }
+    }
+  }
+}
