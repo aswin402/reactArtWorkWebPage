@@ -4,7 +4,7 @@ A React and SCSS single-page experience that showcases curated artwork from the 
 
 ##Coded by [React](https://react.dev/) and styled with [SCSS](https://sass-lang.com/).
 
-<img width="50" height="50" alt="React Logo" src="https://img.icons8.com/?size=100&id=69772&format=png&color=000000"> <img width="50" height="50" alt="SCSS Logo" src="https://img.icons8.com/?size=100&id=QBqFNfPPB2Kx&format=png&color=000000">
+<img width="50" height="50" alt="React Logo" src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"> <img width="50" height="50" alt="SCSS Logo" src="https://img.icons8.com/?size=100&id=QBqFNfPPB2Kx&format=png&color=000000">
 ### Core Technologies
 - **HTML5**: The foundation of the project, ensuring semantic and accessible markup.
 - **SCSS (Sass)**: Enhances CSS with variables, nesting, mixins, and more for cleaner and more manageable stylesheets.
