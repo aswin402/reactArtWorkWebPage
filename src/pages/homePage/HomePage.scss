@@ -60,6 +60,14 @@ $radius: 12px;
     max-width: 700px;
     padding: 2rem;
 
+    .btn-explore{
+     @include button-style($color-primary, $color-light);
+     text-decoration: none;
+     &:hover {
+       background-color: $color-primary-dark;
+     }
+    }
+
     h1 {
       font-family: $font-heading;
       font-size: 3.5rem;
@@ -73,10 +81,6 @@ $radius: 12px;
       margin-bottom: 2rem;
       color: $color-accent;
       line-height: 1.6;
-    }
-
-    .cta-button {
-      @include button-style($color-primary, $color-light);
     }
   }
 }
@@ -146,6 +150,8 @@ $radius: 12px;
     }
   }
 }
+
+
 
 //==========================================
 // RESPONSIVE DESIGN

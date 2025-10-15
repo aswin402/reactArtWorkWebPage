@@ -16,9 +16,9 @@ const HomePage = () => {
             around the world. Our digital gallery connects art lovers,
             collectors, and creators in one vibrant space.
           </p>
-          {/* <Link to="/explore" className="btn-explore">
+          <Link to="/explore" className="btn-explore">
             Explore Artworks
-          </Link> */}
+          </Link>
         </div>
       </section>
 
@@ -52,13 +52,6 @@ const HomePage = () => {
       </section>
 
 
-       {/* Call to Action */}
-      <section className="cta">
-        <h2>Start Your Artistic Journey Today</h2>
-        {/* <Link to="/explore" className="btn-cta">
-          Visit the Gallery
-        </Link> */}
-      </section>
    </>
   );
 };
